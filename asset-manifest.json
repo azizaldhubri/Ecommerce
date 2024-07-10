@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cada8b27.css",
+    "main.js": "/static/js/main.aaedb130.js",
+    "static/media/form.jpg": "/static/media/form.013807ae96d8efd2e670.jpg",
+    "static/media/logo.png": "/static/media/logo.f8969f86b3a50f75b3c2.png",
+    "index.html": "/index.html",
+    "main.cada8b27.css.map": "/static/css/main.cada8b27.css.map",
+    "main.aaedb130.js.map": "/static/js/main.aaedb130.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cada8b27.css",
+    "static/js/main.aaedb130.js"
+  ]
+}
