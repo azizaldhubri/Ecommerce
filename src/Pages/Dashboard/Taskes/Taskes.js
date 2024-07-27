@@ -153,7 +153,7 @@ export default function Temptask(){
                          onClick={()=>{  
                              setTaskeUpdate('addcomment')                                                         
                              setopen(index) ;
-                             setClick(!click)
+                             setClick(true) 
                              setTitle('')
                              setOpenchiledtask(index)                      
                               }}
@@ -167,7 +167,7 @@ export default function Temptask(){
                              setTaskeUpdate('taskUpdate')                                                         
                              setTitle(task.title)
                              setopen(index) 
-                             setClick(!click)
+                             setClick(true) 
                              setOpenchiledtask(index)}}
                           cursor={'pointer'}
                          />                                      
@@ -220,7 +220,7 @@ export default function Temptask(){
                              setTitle(child.title)
                               setopen(index)
                              setTasks_ids(child.id) ;
-                             setClick(!click)                     
+                             setClick(true)                      
                      }}
                          cursor={'pointer'}
                          />
