@@ -248,7 +248,7 @@ export default function Temptask(){
                          {/* {(sent && open===index) && */}
                          {(click && open===index) &&
                          <div className="d-flex " >
-                         <input className="border-0 outlin-0 w-100 form-control " type="text" 
+                         <input className="border-0 outlin-0 w-100 form-control mt-2" type="text" 
                          value={title} name="title" onChange={(e)=>setTitle(e.target.value)}
                          style={{background:'#C8BBBE'}}
                          >
