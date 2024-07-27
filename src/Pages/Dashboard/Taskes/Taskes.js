@@ -183,7 +183,7 @@ export default function Temptask(){
                          </div>
                      </div>
                      <p  className="fs-6 m-0 d-felx flex-column "
-                     cursor={'pointer'} 
+                     style={{cursor:'pointer'}}
                      onClick={()=>{                                                       
                          setOpenchiledtask(index)                 
                          setClick(!click)
