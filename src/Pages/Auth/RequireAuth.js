@@ -5,13 +5,14 @@ import { USER } from "../../Api/Api";
 import LoadingSubmit from "../../Component/Loading/Loading";
 import { Axios } from "../../Api/axios";
 import Error403 from "./403";
+import { Navigate } from "react-router-dom";
 
 
 
 // import Loading from "../../Component/Loading";
 
 export default function RequireAuth({allowedRole}){
-    const Navigate=useNavigate();
+    const navigate=useNavigate();
     // users
     const[user,setUser]=useState('');
    
@@ -19,7 +20,7 @@ export default function RequireAuth({allowedRole}){
       
         Axios.get(`${USER}`)
         .then(data=>setUser(data.data))
-        .catch(<Navigate to={'/login'} replace={true}/>)
+        .catch(()=>navigate('/login',{replace:true}))
       
     },[])
 
