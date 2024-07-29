@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import {  PRO, Pro} from "../../../Api/Api";
+import {  PRO, Pro,USER} from "../../../Api/Api";
 // import Cookie from 'cookie-universal' ;
 import { Axios } from "../../../Api/axios";
 import { Link } from "react-router-dom";
@@ -13,6 +13,12 @@ export default function Products(){
     const[limit,setLimit]=useState(3)
     const[loading,setLoading]=useState(false) 
     const[total,setTotal]=useState(0)
+       const[role,setRole]=useState('')
+    useEffect(()=>{        
+     Axios.get(`/${USER}`)            
+     .then((res)=>{setRole(res.data.role)
+     });         
+ },[]);
     
     
 
@@ -91,6 +97,7 @@ export default function Products(){
           total={total}
           search='title'
           Linksearch={Pro}
+              role={role}
           />
          
 
